@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+      "title": "Breaking the Silence of Code",
+      "author": "Sophia Ray",
+      "author_img": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
+      "posted_date": "2025-04-08",
+      "reading_time": 6,
+      "hashtags": ["#coding", "#javascript", "#webdev"]
+    },
+    {
+      "id": 2,
+      "cover": "https://images.unsplash.com/photo-1553877522-43269d4ea984",
+      "title": "From Bugs to Brilliance",
+      "author": "Daniel Cruz",
+      "author_img": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg",
+      "posted_date": "2025-04-06",
+      "reading_time": 7,
+      "hashtags": ["#debugging", "#softwareengineering", "#productivity"]
+    },
+    {
+      "id": 3,
+      "cover": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+      "title": "The Future Is Serverless",
+      "author": "Maya Singh",
+      "author_img": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
+      "posted_date": "2025-04-03",
+      "reading_time": 5,
+      "hashtags": ["#serverless", "#cloud", "#aws"]
+    },
+    {
+      "id": 4,
+      "cover": "https://images.unsplash.com/photo-1613145993481-68a5c8a06c0c",
+      "title": "Designing for the Human Eye",
+      "author": "Noah Bennett",
+      "author_img": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg",
+      "posted_date": "2025-03-29",
+      "reading_time": 9,
+      "hashtags": ["#uiux", "#design", "#accessibility"]
+    },
+    {
+      "id": 5,
+      "cover": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+      "title": "AI and Ethics: The Thin Line",
+      "author": "Lara Chowdhury",
+      "author_img": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
+      "posted_date": "2025-04-01",
+      "reading_time": 10,
+      "hashtags": ["#ai", "#ethics", "#futureoftech"]
+    }
+  ]
+  
