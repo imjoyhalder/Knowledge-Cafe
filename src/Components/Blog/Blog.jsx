@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import { FaBookmark } from "react-icons/fa6";
 
-const Blog = ({blog, handleAddToBookmark}) => {
+const Blog = ({ blog, handleAddToBookmark, handleMarkAsRead }) => {
     //console.log(blog);
-    const {cover,title, author, author_img, reading_time, posted_date,hashtags} = blog
+    const { cover, title, author, author_img, reading_time, posted_date, hashtags } = blog
     return (
-        <div className='mb-20 '>
-            <div>
-                <img className='w-full border rounded-3xl' src={cover} alt={`cover picture of the title ${title}`} />
+        <div className='mb-20 bg-gradient-to-r from-purple-500  to-blue-500 rounded-xl p-2 text-white'>
+            <div className=''>
+                <img className='w-full border rounded-xl' src={cover} alt={`cover picture of the title ${title}`} />
             </div>
             <div className='flex justify-between pt-4 pb-4'>
                 <div className='flex'>
@@ -17,22 +17,25 @@ const Blog = ({blog, handleAddToBookmark}) => {
                         <p>{posted_date}</p>
                     </div>
                 </div>
-                <div>
-                    <span>{reading_time} min read</span>
-                    <button className='ml-2 text-xl text-green-600' onClick={()=>handleAddToBookmark(blog)}  ><FaBookmark /></button>
+                <div className='flex items-center'>
+                    <p>{reading_time} min read</p>
+                    <button className='ml-2 text-2xl text-green-50' onClick={() => handleAddToBookmark(blog)}  ><FaBookmark /></button>
                 </div>
             </div>
             <h2 className="text-4xl pb-4">{title}</h2>
             <p>
-                {hashtags.map((hash,idx) => <span key={idx} className='mr-2'><a href="">{hash}</a></span>)}
+                {hashtags.map((hash, idx) => <span key={idx} className='mr-2'><a href="">{hash}</a></span>)}
             </p>
+            <button className='pt-3 text-purple-800 font-bold underline'
+                onClick={()=>handleMarkAsRead(reading_time)}>Mark as Read</button>
         </div>
     );
 };
 
-Blog.prototypes = {
+Blog.protoTypes = {
     blog: PropTypes.object.isRequired,
     handleAddToBookmark: PropTypes.func,
+    handleMarkAsRead: PropTypes.func,
 }
 
 export default Blog;
